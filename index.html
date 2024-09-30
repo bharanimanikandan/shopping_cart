@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Store</h1>
+        <input type="text" id="search-bar" placeholder="Search products..." oninput="filterProducts()">
+    </header>
+
+    <main id="product-list" class="product-list"></main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p><strong>Price:</strong> <span id="modal-price"></span></p>
+            <p><strong>Quantity:</strong> <span id="modal-quantity"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shopping Store - Bharanimanikandan</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
